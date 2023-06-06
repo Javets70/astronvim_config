@@ -19,7 +19,9 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<tab>"] = {"<cmd>:bnext<CR>" , desc="Move to next buffer"},
+    ["<S-tab>"] = {"<cmd>:bprevious<CR>" , desc="Move to previous buffer"}
   },
   t = {
     -- setting a mapping to false will disable it
