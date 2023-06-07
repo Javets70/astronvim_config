@@ -9,4 +9,18 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "img-paste-devs/img-paste.vim",
+    ft = "markdown",
+    keys = {
+      {
+        "<leader>pp",
+        ":call mdip#MarkdownClipboardImage()<CR>",
+        mode = "n",
+        desc = "Paste image",
+        buffer = true,
+        silent = true,
+      },
+    },
+  },
 }
