@@ -23,4 +23,17 @@ return {
       },
     },
   },
+  {
+    "dhruvasagar/vim-table-mode",
+    ft = { "markdown", "text" },
+  },
+  {
+    "lervag/vimtex",
+    ft = { "markdown" },
+    lazy = false,
+    config = function()
+      vim.cmd ":call vimtex#init()"
+      vim.g.vimtex_complete_enabled = 1
+    end,
+  },
 }
